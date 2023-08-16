@@ -1,3 +1,5 @@
+feather.replace();
+
 const menuItems = [
   {
     name: "Kopi1",

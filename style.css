@@ -5,13 +5,17 @@
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 #content {
   background-color: whitesmoke;
 }
 
 .container ul {
   display: flex;
-  padding:  5px;
+  padding: 5px;
   margin-top: 10px;
   gap: 8px;
 }
