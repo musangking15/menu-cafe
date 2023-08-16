@@ -1,5 +1,3 @@
-feather.replace();
-
 const menuItems = [
   {
     name: "Kopi1",
@@ -77,16 +75,20 @@ function displayMenuItems(category) {
     const card = document.createElement("div");
     card.className = "col-md-6 col-lg-4";
     card.innerHTML = `
-            <div class="card">
-                <img src="./img/${item.img}" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <div class="d-flex mb-1">
-                        <h4 class="fw-semibold">${item.name}</h4>
-                        <h5 class="ms-auto fw-normal">Rp. ${item.price}K</h5>
-                    </div>
-                    <p class="card-text">${item.deskripsi}</p>
+          <div class="card">
+              <img src="./img/${item.img}" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="d-flex mb-1 py-2">
+                  <h4 class="fw-semibold justify-content-center">${item.name}</h4>
+                  <button class="btn btn-sm btn-primary ms-auto justify-content-center"><i data-feather="shopping-cart"></i></button>
                 </div>
-            </div>
+                <p class="card-text">${item.deskripsi}</p>
+                <div class="d-flex mb-1">
+                  <h5>Price</h5>
+                  <h5 class="ms-auto">Rp. ${item.price}K</h5>
+                </div>
+              </div>
+        </div>
       `;
     menuContainer.appendChild(card);
   });
